@@ -31,6 +31,13 @@ class ContainerComponent extends Component implements ContainerInterface {
 /**
  * {@inheritDoc}
  */
+    public function injectOn($id) {
+        return $this->_container->injectOn($id);
+    }
+	
+/**
+ * {@inheritDoc}
+ */
 	public function has($id) {
 		return $this->_container->has($id);
 	}
